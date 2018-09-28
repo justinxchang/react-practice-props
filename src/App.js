@@ -20,7 +20,8 @@ export default class App extends Component {
 
   createPokemon(){
     const {nameInput, imageInput} = this.state
-    const newPokemon = {name: nameInput, image: imageInput}
+    const newPokemon = {name: nameInput, image: imageInput} 
+    //this part was a little confusing ^
 
     this.setState({pokemon: [...this.state.pokemon, newPokemon] })
   }
